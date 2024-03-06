@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/navbar_grade"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view_header"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view_trending_books"
+        android:layout_width="352dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/gradient_and_round_corners"
+
+        app:layout_constraintBottom_toTopOf="@+id/view_trending_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/welcome_page_header_text"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="167dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_header"
+        app:layout_constraintStart_toStartOf="@+id/view_header"
+        app:layout_constraintTop_toTopOf="@+id/view_header"
+        app:srcCompat="@drawable/book_icon" />
+
+
+    <Button
+        android:id="@+id/btn_log_in"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/btn_log_in"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/btn_about"
+        app:layout_constraintTop_toBottomOf="@+id/view_header"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:text="@string/btn_about"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_header"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <View
+        android:id="@+id/view_trending_author"
+        android:layout_width="351dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/gradient_and_round_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/trending_books"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/view_trending_books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_book_konferansen"
+        android:layout_width="66dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trending_books"
+        app:layout_constraintEnd_toEndOf="@+id/view_trending_books"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="@+id/view_trending_books"
+        app:layout_constraintTop_toTopOf="@+id/view_trending_books"
+        app:srcCompat="@drawable/konferensen" />
+
+    <ImageView
+        android:id="@+id/img_book_friends"
+        android:layout_width="74dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trending_books"
+        app:layout_constraintStart_toEndOf="@+id/img_book_oneday"
+        app:layout_constraintTop_toTopOf="@+id/view_trending_books"
+        app:srcCompat="@drawable/friends" />
+
+    <ImageView
+        android:id="@+id/img_book_institute"
+        android:layout_width="71dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trending_books"
+        app:layout_constraintStart_toEndOf="@+id/img_book_konferansen"
+        app:layout_constraintTop_toTopOf="@+id/view_trending_books"
+        app:srcCompat="@drawable/institutet" />
+
+    <ImageView
+        android:id="@+id/img_book_oneday"
+        android:layout_width="70dp"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trending_books"
+        app:layout_constraintStart_toEndOf="@+id/img_book_institute"
+        app:layout_constraintTop_toTopOf="@+id/view_trending_books"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/oneday" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trending_author"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/view_trending_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_trending_books" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_sally"
+        android:layout_width="105dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trending_author"
+        app:layout_constraintEnd_toEndOf="@+id/view_trending_author"
+
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/view_trending_author"
+        app:layout_constraintTop_toTopOf="@+id/view_trending_author"
+        app:srcCompat="@drawable/sally" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="201dp"
+        android:layout_height="102dp"
+        android:text="@string/recommended_author_bio"
+        app:layout_constraintBottom_toBottomOf="@+id/view_trending_author"
+        app:layout_constraintEnd_toEndOf="@+id/view_trending_author"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toEndOf="@+id/img_sally"
+        app:layout_constraintTop_toTopOf="@+id/view_trending_author"
+        app:layout_constraintVertical_bias="0.645" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Laboration_1_Kotlin</string>
+    <string name="about_text"> Welcome to Bookstagram! An app design for you who loves reading and wants a social place dedicated to exactly that. This app is a work in progress and will feature a verity of different stuff to do when complete. A few examples are: Find book recommendations and authors, journal your reading, add friends, join discussions and much more.     </string>
+    <string name="recommended_author_bio">Sally Rooney (born 20 February 1991) is an Irish author and screenwriter. She has published three novels: Conversations with Friends…, Normal People (2018), and ( Read more..)</string>
+    <string name="welcome_page_header_text">Welcome to Bookstagram</string>
+    <string name="about_header_text">About Bookstagram</string>
+    <string name="log_in_header_text">Log In</string>
+    <string name="btn_about">About</string>
+    <string name="btn_log_in">Log in</string>
+    <string name="btn_back_to_home_page">Back to home page</string>
+    <string name="trending_books">Trending books</string>
+    <string name="trending_author">Trending author</string>
+    <string name="logged_in_header_text">You are signed in</string>
+    <string name="sign_in_btn">Sign in</string>
+    <string name="username_input">Username</string>
+    <string name="password_input">Password</string>
+    <string name="signed_in_message">You are now signed in as: </string>
+
+
+</resources>
